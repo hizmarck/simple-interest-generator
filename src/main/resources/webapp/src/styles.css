@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400&family=Lato:wght@300;400&family=Manrope:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  min-height: 350px;
+  border: 1px solid gray;
+  margin: 40px auto;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 7px;
+}
+
+.form-control-check label {
+  flex: 1;
+  font-weight: bold;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.bg-primary {
+  background: #3D72C9;
+}
+
+.bg-accent {
+  background: #3FCFE5;
+}
+
+.bg-second {
+  background: #8DD1E6;
+}
+
+.bg-complement {
+  background: #FCE69A;
+}
+
+.label {
+  color: white;
+  padding: 8px;
+}
+
+button[disabled] {
+  background-color: darkgrey;
+}

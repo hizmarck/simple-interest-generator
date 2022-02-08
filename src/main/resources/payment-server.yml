@@ -1,0 +1,18 @@
+# Configure spring application
+spring:
+  application:
+    name: payment-service
+
+# configure the eureka client.
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://${registration.server.hostname}:1111/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 10 #only for dev purposes.
+
+# Configure web server
+server:
+  port: 2222

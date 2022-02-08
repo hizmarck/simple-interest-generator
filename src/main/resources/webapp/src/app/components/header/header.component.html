@@ -1,0 +1,9 @@
+<header>
+  <h1> {{ title }}</h1>
+  <app-button
+    (btnClick)="toggleClick()"
+    text="{{ !showAdd ? 'Calculate' : 'Close' }}" color="{{ !showAdd ? '#3FCFE5' : 'red'}}"></app-button>
+</header>
+<div>
+  This app generate the simple interest with the formula: <span class="label bg-complement">A = P(1 + rt)</span>
+</div>

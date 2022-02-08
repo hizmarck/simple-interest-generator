@@ -1,0 +1,5 @@
+<app-generate-payment (onGeneratePayments)="generatePayments($event)" ></app-generate-payment>
+
+<app-payment-item
+  *ngFor="let payment of payments" [payment]="payment">
+</app-payment-item>

@@ -1,0 +1,5 @@
+<div class="payment" [ngClass]="{'first': payment.number === 1}">
+  <h3>Pago {{payment.number}} de  <span>$ {{payment.amount | number:'3.2-2'}}</span></h3>
+  <div>Saldo: <span class="note" [style.color]="payment.pending === 0 ? 'green' : 'gray'">$ {{payment.pending | number:'3.2-2'}}</span></div>
+  <div>Fecha: <span class="note"> {{payment.date}}</span></div>
+</div>

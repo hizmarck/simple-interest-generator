@@ -1,0 +1,14 @@
+# Configure web server
+server.port: 1111
+# Configure discovery Server
+eureka:
+  instance:
+    hostname: localhost
+  client: # don't register with yourself
+    registerWithEureka: false
+    fetchRegistry: false
+
+# Disable thymeleaf
+spring:
+  thymeleaf:
+    enabled: false

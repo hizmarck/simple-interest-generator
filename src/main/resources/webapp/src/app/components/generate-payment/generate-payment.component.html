@@ -1,0 +1,24 @@
+<form class="add-form" (ngSubmit)="onSubmit()" *ngIf="showAdd">
+  <div class="form-control">
+    <label for="amount">Amount ($1 - $999,999.00)</label>
+    <input  #amountNg="ngModel" type="number" id="amount"
+           min="1" max="999999"
+           [(ngModel)]="amount" name="amount" placeholder="Add the amount" required>
+  </div>
+
+  <div class="form-control">
+    <label for="terms">Terms (in weeks 4 - 52) </label>
+    <input #termsNg="ngModel" type="number" id="terms"
+           min="4" max="52"
+           [(ngModel)]="terms" name="terms" placeholder="Indicate the number of terms" required>
+  </div>
+
+  <div class="form-control">
+    <label for="rate">Rate (1% - 99.9%)</label>
+    <input #rateNg="ngModel" type="number" id="rate"
+           min="1" max="99.9"
+           [(ngModel)]="rate" name="rate" placeholder="Indicate the rate of your loan" required>
+  </div>
+
+  <button class="btn btn-block bg-primary" [disabled]="invalid(amountNg) || invalid(termsNg) || invalid(rateNg)" >Generate Payments</button>
+</form>
