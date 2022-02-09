@@ -65,7 +65,7 @@ public class Main {
 		System.out.println();
 		System.out.println("Usage: java -jar ... <service-name> [server-port]");
 		System.out.println("     where");
-		System.out.println("       service-name is 'payments' o 'registration' de default is registration server ");
+		System.out.println("       service-name is 'payments' o empty (default is registration server) ");
 		System.out.println("       server-port > 1024");
 		System.out.println(
 				"     optionally specify --registration.server.hostname=<IP-address> if it is not running on localhost,");
